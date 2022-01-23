@@ -1,6 +1,13 @@
 {
   "title": "Front-end",
   "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a augue a nibh tincidunt lacinia nec sed neque.",
+  "background": {
+    "xs": "/fake-cdn/sunset.jpg",
+    "s": "/fake-cdn/sunset.jpg",
+    "m": "/fake-cdn/sunset.jpg",
+    "l": "/fake-cdn/sunset.jpg",
+    "xl": "/fake-cdn/sunset.jpg"
+  },
   "grid": [
     {
       "title": "Venice",

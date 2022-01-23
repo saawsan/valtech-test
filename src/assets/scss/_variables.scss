@@ -1,0 +1,14 @@
+/* variables */
+$font-dark-color: #222;
+$font-light-color: #fff;
+
+$font-primary-face: "Roboto", Verdana, Helvetica, sans-serif;
+$font-secondary-face: Times, "Times New Roman", Georgia, serif;
+
+$breakpoints: (
+  sm: 375px,
+  md: 768px,
+  lg: 1024px,
+);
+
+$layout-max-width: 1280px;
