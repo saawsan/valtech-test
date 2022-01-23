@@ -1,0 +1,81 @@
+/* variables */
+$font-dark-color: #222;
+$font-light-color: #fff;
+
+$font-primary-face: "Roboto", Verdana, Helvetica, sans-serif;
+$font-secondary-face: Times, "Times New Roman", Georgia, serif;
+
+/* global layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font: normal normal 400 1rem/1.4 $font-primary-face;
+  color: $font-dark-color;
+}
+
+/* utils */
+.d-block {
+  display: block;
+}
+.d-inline {
+  display: inline;
+}
+.d-inline-block {
+  display: inline-block;
+}
+
+/* typo */
+.baseline {
+  font-weight: 100;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.heading {
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &.heading-1 {
+    font-size: 2.3rem;
+  }
+
+  &.heading-2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* cta */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid $font-dark-color;
+  border-radius: 4px;
+  background: none;
+  color: $font-dark-color;
+  font: normal normal 700 0.9rem/1.4 $font-primary-face;
+  text-decoration: none;
+  appearance: none;
+  cursor: pointer;
+  transition: color 200ms ease-out, background-color 200ms ease-out;
+
+  &:hover,
+  &:active {
+    color: $font-light-color;
+    background: $font-dark-color;
+  }
+
+  &.btn-light {
+    color: $font-light-color;
+    border-color: $font-light-color;
+    &:hover,
+    &:active {
+      color: $font-dark-color;
+      background: $font-light-color;
+    }
+  }
+}
