@@ -35,6 +35,16 @@ body {
   display: inline-block;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* typo */
 .baseline {
   font-weight: 100;
@@ -55,7 +65,7 @@ body {
   }
 
   &.heading-2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 

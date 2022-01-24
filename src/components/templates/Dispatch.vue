@@ -6,13 +6,11 @@
         :baseline="title"
         :content="intro"
         :background="background"
-        with-logo="true" />
-
-      <hr>
-      <h1 class="heading heading-1"><span class="baseline d-block">Italy</span> Venise</h1><br>
-      <h2 class="heading heading-2"><span class="baseline d-block">Italy</span> Venise</h2><br>
-      <a href="#" class="btn">Explore more</a><br>
-      <button type="button" class="btn">Explore more</button><br>
+        :with-logo="true" />
+      <mosaic-cards
+        v-if="localitiesList.length"
+        :title="localitiesTitle"
+        :cards="localitiesList" />
     </template>
   </div>
 </template>
@@ -20,28 +18,32 @@
 <script>
 import fetchDispatchData from '@/services/dispatch';
 import Banner from '@/components/molecules/Banner.vue';
+import MosaicCards from '@/components/organisms/MosaicCards.vue';
 
 export default {
   name: 'Dispatch',
   components: {
     Banner,
+    MosaicCards,
   },
   data() {
     return {
       title: null,
       intro: null,
-      localities: [],
+      localitiesTitle: null,
+      localitiesList: [],
       pending: true,
     };
   },
   created() {
     fetchDispatchData().then(({
-      title, intro, background, grid,
+      title, intro, background, localities,
     }) => {
       this.title = title;
       this.intro = intro;
       this.background = background;
-      this.localities = grid;
+      this.localitiesTitle = localities.title;
+      this.localitiesList = localities.list;
     }).catch((error) => {
       // todo: handle error
       console.log('catch', error);
@@ -55,5 +57,6 @@ export default {
 <style lang="scss">
 #dispatch-template {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 </style>

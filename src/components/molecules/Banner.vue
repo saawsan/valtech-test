@@ -28,7 +28,7 @@ export default {
       required: false,
     },
     withLogo: {
-      type: String,
+      type: Boolean,
       required: false,
     },
     content: {
@@ -49,7 +49,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 1.3rem 1rem;
     border-radius: 7px;
     color: $font-light-color;
