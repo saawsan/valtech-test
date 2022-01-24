@@ -1,6 +1,11 @@
 <template>
   <div id="dispatch-template" class="main-wrapper">
-    <div v-if="pending">Placeholder</div>
+    <dispatch-placeholder v-if="pending" />
+    <banner
+      v-else-if="showErrorMessage"
+      baseline="error code"
+      content="Sorry, something went wrong! Please try again later."
+      title="Sorry, something went wrong!" />
     <template v-else>
       <banner
         :baseline="title"
@@ -19,12 +24,14 @@
 import fetchDispatchData from '@/services/dispatch';
 import Banner from '@/components/molecules/Banner.vue';
 import MosaicCards from '@/components/organisms/MosaicCards.vue';
+import DispatchPlaceholder from '@/components/organisms/DispatchPlaceholder.vue';
 
 export default {
   name: 'Dispatch',
   components: {
     Banner,
     MosaicCards,
+    DispatchPlaceholder,
   },
   data() {
     return {
@@ -33,6 +40,7 @@ export default {
       localitiesTitle: null,
       localitiesList: [],
       pending: true,
+      showErrorMessage: false,
     };
   },
   created() {
@@ -45,8 +53,9 @@ export default {
       this.localitiesTitle = localities.title;
       this.localitiesList = localities.list;
     }).catch((error) => {
-      // todo: handle error
+      // todo: send message into an error tracking service
       console.log('catch', error);
+      this.showErrorMessage = true;
     }).finally(() => {
       this.pending = false;
     });

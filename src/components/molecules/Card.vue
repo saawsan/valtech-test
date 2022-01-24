@@ -7,7 +7,17 @@
       </h3>
       <p v-if="intro" v-text="intro" class="intro" />
       <p class="btn btn-light">Explore more</p>
-      <img :src="backgroundImages.xl" alt="" class="bg" />
+      <img
+        :src="backgroundImages.lg"
+        :srcset="`
+          ${backgroundImages.xs} 320w,
+          ${backgroundImages.s} 575w,
+          ${backgroundImages.m} 768w,
+          ${backgroundImages.l} 1024w,
+          ${backgroundImages.xl} 1280w
+        `"
+        size="(max-width: 768px) 100vw, 50vw"
+        alt="" class="bg" />
     </a>
   </article>
 </template>
@@ -103,21 +113,21 @@ export default {
         transition: all 300ms ease-out;
       }
       .intro {
-        // display: none;
         max-width: 20rem;
         max-height: 0;
         overflow: hidden;
-        transition: all 200ms ease-out;
+        transition: all 300ms ease-out;
         opacity: 0;
       }
       .btn {
         position: absolute;
         margin-top: 4rem;
         opacity: 0;
-        transition: all 200ms ease-out;
+        transition: all 150ms ease-out;
       }
 
-      &:hover {
+      &:hover, a:focus {
+        outline: none;
         .intro {
           max-height: 20rem;
           opacity: 1;

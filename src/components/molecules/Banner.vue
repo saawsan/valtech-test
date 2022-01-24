@@ -6,7 +6,18 @@
       <template v-else>{{ title }}</template>
     </h1>
     <p v-text="content" class="content" />
-    <img :src="background.xl" alt="" class="bg" />
+    <img
+      v-if="background"
+      :src="background.lg"
+      :srcset="`
+        ${background.xs} 320w,
+        ${background.s} 575w,
+        ${background.m} 768w,
+        ${background.l} 1024w,
+        ${background.xl} 1280w
+      `"
+      sizes="100vw"
+      alt="" class="bg" />
   </section>
 </template>
 
@@ -37,7 +48,7 @@ export default {
     },
     background: {
       type: Object,
-      required: true,
+      required: false,
     },
   },
 };
