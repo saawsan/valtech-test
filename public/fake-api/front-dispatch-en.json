@@ -32,11 +32,11 @@
         "baseline": "Germany",
         "intro": "Venice, the capital of nothern Italy's Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea. It has no roads, just canals.",
         "background": {
-          "xs": "/fake-cdn/venice.jpg",
-          "s": "/fake-cdn/venice.jpg",
-          "m": "/fake-cdn/venice.jpg",
-          "l": "/fake-cdn/venice.jpg",
-          "xl": "/fake-cdn/venice.jpg"
+          "xs": "/fake-cdn/berlin.jpg",
+          "s": "/fake-cdn/berlin.jpg",
+          "m": "/fake-cdn/berlin.jpg",
+          "l": "/fake-cdn/berlin.jpg",
+          "xl": "/fake-cdn/berlin.jpg"
         },
         "cta": {
           "url": "/venice",
@@ -48,11 +48,11 @@
         "baseline": "Spain",
         "intro": "Venice, the capital of nothern Italy's Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea. It has no roads, just canals.",
         "background": {
-          "xs": "/fake-cdn/venice.jpg",
-          "s": "/fake-cdn/venice.jpg",
-          "m": "/fake-cdn/venice.jpg",
-          "l": "/fake-cdn/venice.jpg",
-          "xl": "/fake-cdn/venice.jpg"
+          "xs": "/fake-cdn/barcelona.jpg",
+          "s": "/fake-cdn/barcelona.jpg",
+          "m": "/fake-cdn/barcelona.jpg",
+          "l": "/fake-cdn/barcelona.jpg",
+          "xl": "/fake-cdn/barcelona.jpg"
         },
         "cta": {
           "url": "/venice",
@@ -64,11 +64,11 @@
         "baseline": "France",
         "intro": "Venice, the capital of nothern Italy's Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea. It has no roads, just canals.",
         "background": {
-          "xs": "/fake-cdn/venice.jpg",
-          "s": "/fake-cdn/venice.jpg",
-          "m": "/fake-cdn/venice.jpg",
-          "l": "/fake-cdn/venice.jpg",
-          "xl": "/fake-cdn/venice.jpg"
+          "xs": "/fake-cdn/paris.jpg",
+          "s": "/fake-cdn/paris.jpg",
+          "m": "/fake-cdn/paris.jpg",
+          "l": "/fake-cdn/paris.jpg",
+          "xl": "/fake-cdn/paris.jpg"
         },
         "cta": {
           "url": "/venice",
@@ -80,11 +80,11 @@
         "baseline": "Netherlands",
         "intro": "Venice, the capital of nothern Italy's Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea. It has no roads, just canals.",
         "background": {
-          "xs": "/fake-cdn/venice.jpg",
-          "s": "/fake-cdn/venice.jpg",
-          "m": "/fake-cdn/venice.jpg",
-          "l": "/fake-cdn/venice.jpg",
-          "xl": "/fake-cdn/venice.jpg"
+          "xs": "/fake-cdn/amsterdam.jpg",
+          "s": "/fake-cdn/amsterdam.jpg",
+          "m": "/fake-cdn/amsterdam.jpg",
+          "l": "/fake-cdn/amsterdam.jpg",
+          "xl": "/fake-cdn/amsterdam.jpg"
         },
         "cta": {
           "url": "/venice",
@@ -96,11 +96,11 @@
         "baseline": "United Kingdom",
         "intro": "Venice, the capital of nothern Italy's Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea. It has no roads, just canals.",
         "background": {
-          "xs": "/fake-cdn/venice.jpg",
-          "s": "/fake-cdn/venice.jpg",
-          "m": "/fake-cdn/venice.jpg",
-          "l": "/fake-cdn/venice.jpg",
-          "xl": "/fake-cdn/venice.jpg"
+          "xs": "/fake-cdn/london.jpg",
+          "s": "/fake-cdn/london.jpg",
+          "m": "/fake-cdn/london.jpg",
+          "l": "/fake-cdn/london.jpg",
+          "xl": "/fake-cdn/london.jpg"
         },
         "cta": {
           "url": "/venice",
